@@ -1,0 +1,78 @@
+<div class="logout-bar">
+    <span class="logout-info">
+        <img src="../../images/synapse.png" style="height: 20px;">
+        Logged in as {{user.email}}
+    </span>
+    <span class="logout-button">
+    	<a class = "waves-effect waves-light btn" ng-click="logOut()">Log Out</a>
+    </span>
+    <span class="navbar-link">
+    	<a class = "waves-effect waves-light btn" ng-click="goTo('/mapView')">Map</a></span>
+    </span>
+    <span class="navbar-link">
+    	<a class = "waves-effect waves-light btn" ng-click="goTo('/listView')">List</a></span>
+    </span>   
+</div>
+
+<div class="row">
+
+	<div class="sidebar col s2">
+
+		<a class="waves-effect waves-light btn" ng-click="requestData()"> update</a>
+		<a class="waves-effect waves-light btn" ng-click="removeFilters()"> reset   </a>	
+
+
+		<div>
+			<input ng-click="filterByCategories('Food')" id = "foodCheck" type="checkbox" class="filled-in check" checked>
+			<label class="check" for="foodCheck"> Food </label>
+		</div>
+
+		<div>
+			<input ng-click="filterByCategories('Gas')" id = "gasCheck" type="checkbox" class="filled-in check" checked>
+			<label class="check" for="gasCheck"> Gas </label>
+		</div>
+
+		<div>
+			<input ng-click="filterByCategories('Hospital')" id = "hospitalCheck" type="checkbox" class="filled-in check" checked>
+			<label class="check" for="hospitalCheck"> Hospitals </label>
+		</div>
+
+		<div>
+			<input ng-click="filterByCategories('Power Outage')" id = "powerCheck" type="checkbox" class="filled-in check" checked>
+			<label class="check" for="powerCheck"> Power Outages </label>
+		</div>
+
+		<div>
+			<input ng-click="filterByCategories('Road Closure')" id = "roadblockCheck" type="checkbox" class="filled-in check" checked>
+			<label class="check" for="roadblockCheck"> Road Closures </label>
+		</div>				
+
+		<div>
+			<input ng-click="filterByCategories('Water')" id = "waterCheck" type="checkbox" class="filled-in check" checked>
+			<label class="check" for="waterCheck"> Water </label>
+		</div>
+
+		
+	</div>
+	<div class="col s10" style="overflow-x: auto;">
+		<table class="eventTable"> 	
+		    <tr>
+		      <th ng-click="sortByAttr('category')">Category</th>
+		      <th ng-click="sortByAttr('current_score')">Score</th>
+		      <th ng-click="sortByAttr('type')">Type</th>
+		      <th ng-click="sortByAttr('time')">Time</th>
+		      <th ng-click="sortByAttr('location_lat')">Location</th>
+		      <th ng-click="sortByAttr('cost')">Cost</th>
+		    </tr>
+			<tr ng-repeat="event in main.curData track by $index">
+		      <td>{{event.category}}</td>
+		      <td>{{event.current_score}}</td>
+		      <td>{{event.type}}</td>
+		      <td>{{event.time}}</td>
+		      <td>{{event.location_lat}},{{event.location_long}}</td>
+		      <td>{{event.cost}}</td>
+			</tr>
+		</table>
+	</div>
+</div>
+

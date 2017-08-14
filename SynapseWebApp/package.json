@@ -1,0 +1,20 @@
+{
+  "name": "synapse-web-app",
+  "version": "1.0.0",
+  "description": "A web application to allow admins to interface with crowdsourced data from the Synapse client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "synapse",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-jwt": "^0.1.9",
+    "angular-route": "^1.6.4",
+    "express": "^4.15.3",
+    "mapbox-gl": "^0.37.0",
+    "materialize-css": "^0.98.2",
+    "ng-grid": "^2.0.1"
+  }
+}

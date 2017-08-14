@@ -1,0 +1,20 @@
+div.login-button {
+    position: relative;
+    left: 15px;
+}
+
+div.login-window {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.login-page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #606060;
+}

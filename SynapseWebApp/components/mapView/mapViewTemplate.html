@@ -1,0 +1,54 @@
+<div class="logout-bar">
+    <span class="logout-info">
+        <img src="../../images/synapse.png" style="height: 20px;">
+        Logged in as {{user.email}}
+    </span>
+    <span class="logout-button">
+    	<a class = "waves-effect waves-light btn" ng-click="logOut()">Log Out</a>
+    </span>
+    <span class="navbar-link">
+    	<a class = "waves-effect waves-light btn" ng-click="goTo('/mapView')">Map</a></span>
+    </span>
+    <span class="navbar-link">
+    	<a class = "waves-effect waves-light btn" ng-click="goTo('/listView')">List</a></span>
+    </span>   
+</div>
+
+<div>
+	<div id='map'>
+	</div>
+	<div class="mapctrl">
+		<a class="waves-effect waves-light btn" ng-click="requestData()"> update</a>
+		<a class="waves-effect waves-light btn" ng-click="removeFilters()"> reset   </a>	
+		<div>
+			<input ng-click="filterByCategories('Food')" id = "foodCheck" type="checkbox" class="filled-in check" checked>
+			<label class="check" for="foodCheck"> Food </label>
+		</div>
+
+		<div>
+			<input ng-click="filterByCategories('Gas')" id = "gasCheck" type="checkbox" class="filled-in check" checked>
+			<label class="check" for="gasCheck"> Gas </label>
+		</div>
+
+		<div>
+			<input ng-click="filterByCategories('Hospital')" id = "hospitalCheck" type="checkbox" class="filled-in check" checked>
+			<label class="check" for="hospitalCheck"> Hospitals </label>
+		</div>
+
+		<div>
+			<input ng-click="filterByCategories('Power Outage')" id = "powerCheck" type="checkbox" class="filled-in check" checked>
+			<label class="check" for="powerCheck"> Power Outages </label>
+		</div>
+
+		<div>
+			<input ng-click="filterByCategories('Road Closure')" id = "roadblockCheck" type="checkbox" class="filled-in check" checked>
+			<label class="check" for="roadblockCheck"> Road Closures </label>
+		</div>				
+
+		<div>
+			<input ng-click="filterByCategories('Water')" id = "waterCheck" type="checkbox" class="filled-in check" checked>
+			<label class="check" for="waterCheck"> Water </label>
+		</div>
+	</div>
+</div>
+

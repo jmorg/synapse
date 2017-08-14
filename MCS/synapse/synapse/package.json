@@ -1,0 +1,15 @@
+{
+  "name": "synapse",
+  "version": "1.0",
+  "description": "flask",
+  "main": "synapse.js",
+  "oracleMobile": {
+    "dependencies": {
+      "apis": {},
+      "connectors": {}
+    }
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}

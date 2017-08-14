@@ -1,0 +1,105 @@
+.eventTable {
+	width: 100%;
+}
+
+.check {
+	margin-top: 5px;
+}
+
+.btn {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+table, th, td {
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+}
+
+th {
+    background-color: #26a69a;
+    color: white;
+}
+
+tr:nth-child(even) {
+ 	background-color: #f2f2f2;
+}
+
+tr:hover {
+	background-color: #ddd;
+}
+
+#map {
+	position: absolute;
+	left:0;
+	top:75px;
+	bottom:0;
+	width: 100%;
+}
+
+.marker {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.mapctrl {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    padding: 0.75rem;
+    background-color: rgba(204,204,204,0.75);
+    border-radius: 10px;
+}
+
+div.logout-bar {
+    background-color: #606060;
+    display: table;
+    width: 100%;
+}
+
+span.logout-info {
+    color: white;
+    display: table-cell;
+    float: left;
+    margin: 20px;
+}
+
+span.navbar-link {
+	float:right;
+    color: white;
+    display: table-cell;
+    margin: 15px;
+}
+
+span.logout-button {
+    display: table-cell;
+    float: right;
+    margin: 15px; 
+}
+
+div.login-button {
+    position: relative;
+    left: 15px;
+}
+
+div.login-window {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.login-page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #606060;
+}
