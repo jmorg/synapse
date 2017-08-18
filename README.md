@@ -22,4 +22,4 @@ Here are some of the features that are currently in development:
 * Adding emergency cards with contact info based on current location
 * Keeping track of friends and family in a disaster so you can assure they're safe
 
-You can take a look at our tech stack [here](http://www.infoworld.com/article/3215148/mobile-development/build-an-app-with-flask-and-oracle-mobile-cloud-service.html) and read about our story [here](www.teamsynapse.wordpress.com) and we'd love it if you made a pull request! Synapse is a great project for people looking to use CS for social good or to tackle difficult problems that are unique to disaster scenarios, and we're always looking for new contributors. 
+You can take a look at our tech stack [here](http://www.infoworld.com/article/3215148/mobile-development/build-an-app-with-flask-and-oracle-mobile-cloud-service.html) and read about our story [here](http://www.teamsynapse.wordpress.com) and we'd love it if you made a pull request! Synapse is a great project for people looking to use CS for social good or to tackle difficult problems that are unique to disaster scenarios, and we're always looking for new contributors. 
