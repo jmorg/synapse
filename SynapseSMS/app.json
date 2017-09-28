@@ -1,0 +1,21 @@
+{
+  "name": "Synapse",
+  "description": "A simple Python server to distribute capability tokens and route calls for your mobile app",
+  "keywords": [
+    "synapse"
+  ],
+  "env": {
+    "ACCOUNT_SID": {
+      "description": "INSERT ACCOUNT SID HERE",
+      "required": true
+    },
+    "AUTH_TOKEN": {
+      "description": "INSERT AUTH TOKEN HERE",
+      "required": true
+    },
+    "CALLER_ID": {
+      "description": "INSERT YOUR PERSONAL PHONE NUMBER HERE",
+      "required": true
+    }
+  }
+}
