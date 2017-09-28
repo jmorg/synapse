@@ -6,15 +6,15 @@
   ],
   "env": {
     "ACCOUNT_SID": {
-      "description": "AC5180b1b0a54b8bd455701fd774f36704",
+      "description": "INSERT ACCOUNT SID HERE",
       "required": true
     },
     "AUTH_TOKEN": {
-      "description": "84b4ed7803607a4ee8bd18f9eed390f2",
+      "description": "INSERT AUTH TOKEN HERE",
       "required": true
     },
     "CALLER_ID": {
-      "description": "6503873269",
+      "description": "INSERT YOUR PERSONAL PHONE NUMBER HERE",
       "required": true
     }
   }
